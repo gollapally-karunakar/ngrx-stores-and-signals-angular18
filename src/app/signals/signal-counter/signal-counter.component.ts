@@ -26,7 +26,7 @@ export class SignalCounterComponent {
   /**
    * Incrementing count number plus one,
    * By: Karunakar,
-   * On: 24th June 2024
+   * Date: 24th June 2024
   */
   increment() {
     this.count.update(num => num + 1);
@@ -35,7 +35,7 @@ export class SignalCounterComponent {
   /**
    * Decrementing count number minus one,
    * By: Karunakar,
-   * On: 24th June 2024
+   * Date: 24th June 2024
   */
   decrement() {
     this.count.update(num => num - 1);
@@ -44,7 +44,7 @@ export class SignalCounterComponent {
   /**
    * Resetting count number to Zero,
    * By: Karunakar,
-   * On: 24th June 2024
+   * Date: 24th June 2024
   */
   reset() {
     this.count.set(0);

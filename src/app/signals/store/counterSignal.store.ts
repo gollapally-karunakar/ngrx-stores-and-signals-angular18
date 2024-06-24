@@ -1,5 +1,8 @@
-import { computed } from "@angular/core"
+import { computed, inject } from "@angular/core"
 import { patchState, signalStore, withComputed, withMethods, withState } from "@ngrx/signals"
+import { PostsService } from "../../services/posts.service"
+import { map, pipe, switchMap } from "rxjs"
+import { Posts } from "../../services/posts.interface"
 
 export interface CounterStateFromSignals {
     count: number
@@ -11,8 +14,8 @@ const initialSignalCounterState: CounterStateFromSignals = {
 
 /**
  * Creating Counter Signal Store
- * By : Karunakar,
- * Oy : 24th June 2024
+ * By: Karunakar,
+ * Date: 24th June 2024
 */
 
 export const CounterStoreSignal = signalStore(
@@ -30,6 +33,6 @@ export const CounterStoreSignal = signalStore(
         },
         reset() {
             patchState(store, {count: 0})
-        },
-    }))
+        }
+    })),
 )
