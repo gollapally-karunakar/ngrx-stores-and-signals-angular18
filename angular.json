@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngrx-stores-and-signals-test": {
+    "ngrx-stores-and-signals-angular18": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ngrx-stores-and-signals-test",
+            "outputPath": "dist/ngrx-stores-and-signals-angular18",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -32,9 +32,13 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -69,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ngrx-stores-and-signals-test:build:production"
+              "buildTarget": "ngrx-stores-and-signals-angular18:build:production"
             },
             "development": {
-              "buildTarget": "ngrx-stores-and-signals-test:build:development"
+              "buildTarget": "ngrx-stores-and-signals-angular18:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -103,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2ff704dd-0d4b-477c-8d1b-be034380474c"
   }
 }

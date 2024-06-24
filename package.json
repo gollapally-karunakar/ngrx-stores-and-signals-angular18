@@ -1,5 +1,5 @@
 {
-  "name": "ngrx-stores-and-signals-test",
+  "name": "ngrx-stores-and-signals-angular18",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ngrx-stores-and-signals-test": "node dist/ngrx-stores-and-signals-test/server/server.mjs"
+    "serve:ssr:ngrx-stores-and-signals-angular18": "node dist/ngrx-stores-and-signals-angular18/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +21,11 @@
     "@angular/platform-server": "^18.0.0",
     "@angular/router": "^18.0.0",
     "@angular/ssr": "^18.0.5",
+    "@ngrx/effects": "^18.0.0",
+    "@ngrx/signals": "^18.0.0-rc.1",
+    "@ngrx/store": "^18.0.0",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

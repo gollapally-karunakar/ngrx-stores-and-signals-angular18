@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { SignalCounterComponent } from "./signals/signal-counter/signal-counter.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    imports: [RouterOutlet, SignalCounterComponent]
 })
 export class AppComponent {
-  title = 'ngrx-stores-and-signals-test';
+  title = 'ngrx-stores-and-signals-angular18';
 }
